@@ -11,8 +11,8 @@ locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
 title                    : "Your Name / Site Title"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+name                     : &name "Kai Yin"
+description              : &description "CS Ph.D. student at Texas A&M University. Information Retrieval, RAG, and LLM-based multi-agent task planning."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -24,11 +24,11 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  name             : "Kai Yin"
+  pronouns         : # example: He"  
+  bio              : "Ph.D. student in Computer Science at Texas A&M University (advised by Prof. James Caverlee and Prof. Ali Mostafavi)."
+  location         : "College Station, TX, USA"
+  employer         : "Texas A&M University"
   uri              : # URL
   email            : "none@example.org" 
 
