@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Your Name / Site Title"
+title                    : "Kai Yin/ Texas A&M University"
 title_separator          : "-"
 name                     : &name "Kai Yin"
 description              : &description "CS Ph.D. student at Texas A&M University. Information Retrieval, RAG, and LLM-based multi-agent task planning."   # Update this with a general description of your site, this is the default if not overridden by a page
