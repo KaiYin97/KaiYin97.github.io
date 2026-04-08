@@ -332,8 +332,14 @@ ul li { margin-bottom: 0.3em; }
 .paper-box-text .links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 0.35rem;
   margin-bottom: 0.6rem;
+  align-items: center;
+}
+
+.paper-box-text .links img {
+  display: block;
+  height: 20px;
 }
 
 .link-btn {
