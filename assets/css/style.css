@@ -1,0 +1,474 @@
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 15px; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  background: #fff;
+  line-height: 1.65;
+}
+
+a { color: #2a6db5; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+ul { list-style: disc; padding-left: 1.4em; }
+ul li { margin-bottom: 0.3em; }
+
+/* ===== TOP NAVIGATION ===== */
+.masthead {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 1000;
+  height: 48px;
+}
+
+.masthead__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.masthead__title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #222;
+  margin-right: 2rem;
+  white-space: nowrap;
+}
+
+.masthead__nav {
+  display: flex;
+  gap: 0;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.masthead__nav a {
+  color: #444;
+  font-size: 0.875rem;
+  padding: 0 0.85rem;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+
+.masthead__nav a:hover,
+.masthead__nav a.active {
+  color: #2a6db5;
+  border-bottom-color: #2a6db5;
+  text-decoration: none;
+}
+
+/* hamburger for mobile */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 0.4rem;
+}
+.nav-toggle span,
+.nav-toggle span::before,
+.nav-toggle span::after {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #444;
+  position: relative;
+  transition: 0.3s;
+}
+.nav-toggle span::before,
+.nav-toggle span::after {
+  content: '';
+  position: absolute;
+}
+.nav-toggle span::before { top: -6px; }
+.nav-toggle span::after  { top:  6px; }
+
+/* ===== PAGE LAYOUT ===== */
+.page-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 72px 1.5rem 3rem;
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 240px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 64px;
+}
+
+.profile-box {
+  text-align: center;
+}
+
+.profile-box .avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e8e8e8;
+  margin-bottom: 0.75rem;
+}
+
+.profile-box .avatar-placeholder {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  border: 3px solid #e8e8e8;
+}
+
+.profile-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.2rem;
+}
+
+.profile-affil {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.profile-bio {
+  font-size: 0.82rem;
+  color: #555;
+  line-height: 1.55;
+  text-align: left;
+  margin-bottom: 1rem;
+  padding: 0 0.25rem;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.social-links li {
+  margin-bottom: 0.45rem;
+}
+
+.social-links a {
+  font-size: 0.85rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-links a:hover { color: #2a6db5; text-decoration: none; }
+
+.social-links i {
+  width: 18px;
+  text-align: center;
+  color: #666;
+  flex-shrink: 0;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ===== SECTION ===== */
+.section {
+  margin-bottom: 2.8rem;
+  scroll-margin-top: 64px;
+}
+
+.section h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.section p {
+  margin-bottom: 0.75rem;
+}
+
+/* ===== NEWS ===== */
+.news-list {
+  list-style: none;
+  padding: 0;
+}
+
+.news-list li {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.92rem;
+  align-items: flex-start;
+  line-height: 1.55;
+}
+
+.news-date {
+  flex-shrink: 0;
+  font-style: italic;
+  color: #888;
+  min-width: 70px;
+}
+
+/* ===== PAPER BOX ===== */
+.paper-box {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1.6rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.paper-box:last-child { border-bottom: none; }
+
+.paper-box-image {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.paper-box-image .badge {
+  display: inline-block;
+  background: #2a6db5;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  margin-bottom: 0.35rem;
+  letter-spacing: 0.02em;
+}
+
+.badge-findings { background: #5a9a5a; }
+.badge-arxiv    { background: #b55a2a; }
+.badge-in-progress { background: #888; }
+
+.paper-box-image img {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  display: block;
+  margin-top: 0.35rem;
+}
+
+.paper-img-placeholder {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e8edf5 100%);
+  border-radius: 4px;
+  border: 1px solid #dde2ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.paper-box-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.paper-box-text h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.3rem;
+  line-height: 1.45;
+}
+
+.paper-box-text .authors {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+.paper-box-text .authors strong {
+  color: #222;
+}
+
+.paper-box-text .venue {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.paper-box-text .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.link-btn {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid #2a6db5;
+  border-radius: 3px;
+  color: #2a6db5;
+  transition: background 0.15s, color 0.15s;
+}
+
+.link-btn:hover {
+  background: #2a6db5;
+  color: #fff;
+  text-decoration: none;
+}
+
+.paper-box-text ul {
+  font-size: 0.85rem;
+  color: #555;
+  padding-left: 1.2em;
+}
+
+.paper-box-text ul li { margin-bottom: 0.25rem; }
+
+/* ===== PLAIN PUBLICATION LIST ===== */
+.pub-list {
+  list-style: none;
+  padding: 0;
+}
+
+.pub-list li {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  padding-left: 1rem;
+  border-left: 3px solid #e0e0e0;
+  line-height: 1.6;
+}
+
+.pub-list li .pub-venue {
+  font-weight: 700;
+  color: #2a6db5;
+}
+
+/* ===== EDUCATION ===== */
+.edu-list {
+  list-style: none;
+  padding: 0;
+}
+
+.edu-list li {
+  margin-bottom: 0.9rem;
+  font-size: 0.92rem;
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
+
+.edu-date {
+  flex-shrink: 0;
+  font-style: italic;
+  color: #888;
+  min-width: 140px;
+}
+
+/* ===== SKILLS ===== */
+.skills-box {
+  font-size: 0.92rem;
+  color: #444;
+  background: #f8f9fa;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border-left: 3px solid #2a6db5;
+}
+
+/* ===== HONORS ===== */
+.honors-list { font-size: 0.92rem; }
+.honors-list li { margin-bottom: 0.4rem; }
+
+/* ===== FOOTER ===== */
+.site-footer {
+  text-align: center;
+  font-size: 0.78rem;
+  color: #aaa;
+  padding: 1.5rem;
+  border-top: 1px solid #eee;
+  margin-top: 2rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .nav-toggle { display: block; }
+
+  .masthead__nav {
+    display: none;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    flex-direction: column;
+    padding: 0.5rem 0;
+  }
+
+  .masthead__nav.open { display: flex; }
+
+  .masthead__nav a {
+    height: auto;
+    padding: 0.6rem 1.5rem;
+    border-bottom: none;
+    border-left: 3px solid transparent;
+  }
+
+  .masthead__nav a:hover,
+  .masthead__nav a.active {
+    border-bottom: none;
+    border-left-color: #2a6db5;
+  }
+
+  .page-wrap {
+    flex-direction: column;
+    padding-top: 64px;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: static;
+  }
+
+  .profile-box { text-align: center; }
+
+  .social-links { display: inline-block; text-align: left; }
+
+  .paper-box {
+    flex-direction: column;
+  }
+
+  .paper-box-image { width: 100%; max-width: 260px; }
+
+  .edu-date { min-width: 110px; }
+}
