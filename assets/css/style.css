@@ -383,8 +383,8 @@ ul li { margin-bottom: 0.3em; }
 }
 
 .pub-list li .pub-venue {
-  font-weight: bold;
-  color: #224b8d;
+  font-weight: normal;
+  color: #494e52;
 }
 
 /* ===== EDUCATION ===== */
