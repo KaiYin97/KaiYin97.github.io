@@ -22,8 +22,8 @@
     <nav class="masthead__nav" id="site-nav">
       <a href="#about-me">About Me</a>
       <a href="#news">News</a>
-      <a href="#publications">Publications</a>
-      <a href="#research">Research</a>
+      <a href="#publications">Publications &amp; Projects</a>
+      <a href="#other-publications">Other Publications</a>
       <a href="#education">Education</a>
       <a href="#honors">Honors</a>
     </nav>
@@ -144,9 +144,9 @@
       </ul>
     </section>
 
-    <!-- PUBLICATIONS -->
+    <!-- PUBLICATIONS & PROJECTS -->
     <section class="section" id="publications">
-      <h1>📝 Selected Publications</h1>
+      <h1>📝 Selected Publications and Projects</h1>
 
       <!-- DMRetriever -->
       <div class="paper-box">
@@ -156,19 +156,21 @@
         </div>
         <div class="paper-box-text">
           <h3><a href="https://arxiv.org/abs/2510.15087" target="_blank" rel="noopener">
-            DMRetriever: A Family of Models for Improved Text Retrieval in Disaster Management
+            DMRetriever: Difficulty-aware Progressive Fine-tuning LLM for Improved Textual Retrieval in Data-Scarce Domain
           </a></h3>
           <p class="authors"><strong>Kai Yin</strong>, Xiangjue Dong, Chengkai Liu, Allen Lin, Lingfeng Shi, Ali Mostafavi, &amp; James Caverlee</p>
-          <p class="venue"><em>ACL 2026 Main</em> &nbsp;
+          <p class="venue"><em>ACL 2026 Main</em> &nbsp;|&nbsp; May. 2025 – Sept. 2025</p>
           <div class="links">
             <a class="link-btn" href="https://arxiv.org/abs/2510.15087" target="_blank" rel="noopener">Paper</a>
             <a class="link-btn" href="https://github.com/KaiYin97/DMRETRIEVER" target="_blank" rel="noopener">Code</a>
             <a class="link-btn" href="https://huggingface.co/DMIR01/DMRetriever" target="_blank" rel="noopener">Model</a>
           </div>
           <ul>
-            <li>A family of six dense retrieval models (33M–7.6B) achieving <strong>SOTA across 48 retrieval tasks</strong> at all scales.</li>
-            <li>Proposes <strong>difficulty-aware progressive fine-tuning</strong> and <strong>multi-teacher knowledge distillation</strong> for parameter-efficient retrieval.</li>
-            <li>Introduces a <strong>light-weight IR validation set</strong> enabling 30× faster model development.</li>
+            <li>Developed DMRetriever, a family of six dense retrieval models (ranging from 33M to 7.6B parameters) initialized from <strong>encoder (BERT)- and decoder- (Qwen)-only backbones</strong>, achieving <strong>SOTA results across 48 retrieval tasks within all scales</strong> and <strong>exceptional parameter efficiency</strong>.</li>
+            <li>Proposed <strong>difficulty-aware progressive instruction supervised fine-tuning</strong> to ensure models at different scales learn effectively.</li>
+            <li>Introduced an <strong>advanced data refinement</strong> method, including domain-specific data synthesis, mutual-agreement-based false positive filtering, and <strong>difficulty-aware hard negative mining</strong>.</li>
+            <li>Proposed <strong>multi-teacher knowledge distillation</strong> to further improve small-sized model performance and achieve parameter-efficiency for on-device model implementation.</li>
+            <li>Introduced a <strong>light-weight IR validation set</strong>, enabling over <strong>30× faster model development</strong> while maintaining reliable performance rankings.</li>
           </ul>
         </div>
       </div>
@@ -181,19 +183,19 @@
         </div>
         <div class="paper-box-text">
           <h3><a href="https://aclanthology.org/2025.findings-emnlp.97/" target="_blank" rel="noopener">
-            DisastIR: A Comprehensive Information Retrieval Benchmark for Disaster Management
+            DisastIR: Automatic Information Retrieval Benchmark Construction for Data-Scarce Domain
           </a></h3>
           <p class="authors"><strong>Kai Yin</strong>, Xiangjue Dong, Chengkai Liu, et al., Ali Mostafavi, &amp; James Caverlee</p>
-          <p class="venue"><em>EMNLP 2025 Findings</em></p>
+          <p class="venue"><em>EMNLP 2025 Findings</em> &nbsp;|&nbsp; Jan. 2025 – May. 2025</p>
           <div class="links">
             <a class="link-btn" href="https://aclanthology.org/2025.findings-emnlp.97/" target="_blank" rel="noopener">Paper</a>
             <a class="link-btn" href="https://github.com/KaiYin97/Disaster_IR" target="_blank" rel="noopener">Code</a>
             <a class="link-btn" href="https://huggingface.co/datasets/DMIR01/DisastIR" target="_blank" rel="noopener">Dataset</a>
           </div>
           <ul>
-            <li>48 retrieval tasks with over <strong>1.3M automatically labeled query-passage pairs</strong> for disaster management.</li>
-            <li>Four-stage automatic relevance labeling framework achieving <strong>zero "hole" rate</strong> and high ranking consistency with human annotations.</li>
-            <li>Benchmarks 30 retrieval models (33M–7B) under exact and ANN search.</li>
+            <li>Developed DisastIR, a comprehensive IR benchmark covering <strong>48 distinct retrieval tasks</strong> with over <strong>1.3M automatically labeled query-passage pairs</strong> for a data-scarce domain.</li>
+            <li>Developed a four-stage <strong>automatic query-passage relevance labeling framework</strong> which fully replaces human labeling, ensures <strong>zero "hole" rate</strong> for model evaluation and achieves <strong>significant consistency</strong> for model performance ranking with human annotations.</li>
+            <li>Benchmarked 30 retrieval models (33M–7B) under <strong>exact and ANN search</strong>, guiding model selection.</li>
           </ul>
         </div>
       </div>
@@ -206,30 +208,72 @@
         </div>
         <div class="paper-box-text">
           <h3><a href="https://arxiv.org/abs/2601.03670" target="_blank" rel="noopener">
-            DisasterQA: A Comprehensive Benchmark for Question Answering Evaluation in Disaster Management
+            DisastQA: A Comprehensive Benchmark for Question Answering Evaluation in Disaster Management
           </a></h3>
           <p class="authors">Zhitong Chen*, <strong>Kai Yin*</strong>, Xiangjue Dong, Chengkai Liu, Ali Mostafavi, &amp; James Caverlee</p>
-          <p class="venue"><em>ACL 2026 Findings</em> &nbsp;|&nbsp; Equal Contribution, Co-first author</p>
+          <p class="venue"><em>ACL 2026 Findings</em> &nbsp;|&nbsp; Co-first author &nbsp;|&nbsp; May. 2025 – Sep. 2025</p>
           <div class="links">
             <a class="link-btn" href="https://arxiv.org/abs/2601.03670" target="_blank" rel="noopener">Paper</a>
           </div>
           <ul>
-            <li>3,000 QA pairs covering multiple-choice and open-ended questions based on DisastIR.</li>
-            <li>Human-LLM collaborative pipeline with <strong>key point extraction</strong> for verifiable open-ended evaluation.</li>
-            <li>Evaluates 18 LLMs under no-passage, golden-passage, and mixture retrieval settings.</li>
+            <li>Developed DisastQA, a QA benchmark covering both <strong>multiple choice</strong> and <strong>open-ended question</strong> types with 3,000 QA pairs based on DisastIR.</li>
+            <li>Proposed a Human-LLM collaborative pipeline for efficient benchmark development with <strong>key point extraction</strong> for open-ended questions, ensuring <strong>verifiable evaluation</strong>.</li>
+            <li>Evaluated 18 LLMs considering different upstream retrieval performances under <strong>no relevant passage (base), only relevant passage (golden), and mixture (mix) settings</strong>.</li>
           </ul>
         </div>
       </div>
 
-      <!-- Other publications -->
+      <!-- CrisisSense-LLM -->
+      <div class="paper-box">
+        <div class="paper-box-image">
+          <div class="badge badge-arxiv">arXiv 2024</div>
+          <img src="images/CrisisLLM.JPG" alt="CrisisSense-LLM" width="100%">
+        </div>
+        <div class="paper-box-text">
+          <h3><a href="https://arxiv.org/abs/2406.15477" target="_blank" rel="noopener">
+            CrisisSense-LLM: Instruction Fine-Tuning LLM for Multi-task Social Media Text Processing in Disaster Informatics
+          </a></h3>
+          <p class="authors"><strong>Kai Yin</strong>, Chengkai Liu, Ali Mostafavi, &amp; Xia Hu</p>
+          <p class="venue"><em>arXiv:2406.15477</em> &nbsp;|&nbsp; Under review, Information Processing and Management &nbsp;|&nbsp; Jan. 2024 – Jun. 2024</p>
+          <div class="links">
+            <a class="link-btn" href="https://arxiv.org/abs/2406.15477" target="_blank" rel="noopener">Paper</a>
+            <a class="link-btn" href="https://github.com/KaiYin97/CrsisLLM" target="_blank" rel="noopener">Code</a>
+          </div>
+          <ul>
+            <li>Designed fine-tuning prompt for <strong>multi-task tuning</strong> (text classification and named entity recognition) in multi-turn conversation format to <strong>instruction fine-tune</strong> Llama3.1-8B in <strong>LoRA</strong> and full-parameter tuning settings.</li>
+            <li>Searched for hyperparameter combinations of LoRA to achieve <strong>96.7% performance</strong> of full-parameter tuning, achieving best overall accuracy of <strong>87.2%</strong>.</li>
+            <li>Fine-tuned with <strong>data-parallel mixed-precision</strong> using <strong>DeepSpeed ZeRO-Stage-3</strong>, reducing GPU time by <strong>35%</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Disaster-Agent -->
+      <div class="paper-box">
+        <div class="paper-box-image">
+          <div class="badge badge-arxiv">Project 2024</div>
+          <img src="images/Disast-Agent.JPG" alt="Disaster-Agent" width="100%">
+        </div>
+        <div class="paper-box-text">
+          <h3><a href="https://github.com/kaiYinTAMU/Disaster-Agent" target="_blank" rel="noopener">
+            Disaster-Agent: LLM-based Multi-agent System for Complex Disaster Management Task Solving
+          </a></h3>
+          <p class="venue">Sep. 2024 – Jan. 2025</p>
+          <div class="links">
+            <a class="link-btn" href="https://github.com/kaiYinTAMU/Disaster-Agent" target="_blank" rel="noopener">Code</a>
+          </div>
+          <ul>
+            <li>Proposed <strong>E_MCTS_TP</strong> (Efficient Monte Carlo Tree Search for Task Planning) at test time to improve <strong>task planning</strong> ability and efficiency of small language models (SLM) in multi-agent systems.</li>
+            <li>Developed <strong>DisasterTool</strong> through <strong>LLM-in-loop domain-specific agent discovery pipeline</strong>, reducing human workloads by <strong>98.9%</strong>.</li>
+            <li>Introduced <strong>DisasterTask benchmark</strong> including user tasks in different complexities through random sampling <strong>tool and data graph</strong> and self-instruct LLM in node, chain, and directed acyclic graph levels.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- OTHER PUBLICATIONS -->
+    <section class="section" id="other-publications">
+      <h1>📄 Other Publications</h1>
       <ul class="pub-list">
-        <li>
-          <strong>CrisisSense-LLM: Instruction Fine-Tuned Large Language Model for Multi-label Social Media Text Classification in Disaster Informatics.</strong><br>
-          <strong>Kai Yin</strong>, Chengkai Liu, Ali Mostafavi, &amp; Xia Hu. (2024).
-          arXiv:2406.15477. <span class="pub-venue">(Under review, Information Processing and Management)</span><br>
-          [<a href="https://arxiv.org/abs/2406.15477" target="_blank" rel="noopener">arXiv</a>]
-          [<a href="https://github.com/KaiYin97/CrsisLLM" target="_blank" rel="noopener">Code</a>]
-        </li>
         <li>
           <strong>FloodSQL-Bench: A Retrieval-Augmented Benchmark for Geospatially-Grounded Text-to-SQL.</strong><br>
           Hanzhou Liu, <strong>Kai Yin</strong>, Ali Mostafavi, &amp; James Caverlee (2025).
@@ -244,7 +288,7 @@
         </li>
         <li>
           <strong>Unsupervised graph deep learning reveals emergent flood risk profile of urban areas.</strong><br>
-          <strong>Kai Yin</strong>, Ali Mostafavi (2023). arXiv:2309.
+          <strong>Kai Yin</strong>, Ali Mostafavi (2023).
           <span class="pub-venue">(Under review, npj Urban Sustainability)</span>
         </li>
         <li>
@@ -253,52 +297,6 @@
           <span class="pub-venue">Transportation Research Part A.</span>
         </li>
       </ul>
-    </section>
-
-    <!-- RESEARCH PROJECTS -->
-    <section class="section" id="research">
-      <h1>🔬 Research Projects</h1>
-
-      <!-- CrisisSense-LLM -->
-      <div class="paper-box">
-        <div class="paper-box-image">
-          <div class="badge badge-arxiv">arXiv 2024</div>
-          <div class="paper-img-placeholder">CrisisSense-LLM</div>
-        </div>
-        <div class="paper-box-text">
-          <h3>CrisisSense-LLM: Instruction Fine-Tuning LLM for Multi-task Social Media Text Processing in Disaster Informatics</h3>
-          <p class="venue">Jan. 2024 – Jun. 2024</p>
-          <div class="links">
-            <a class="link-btn" href="https://arxiv.org/abs/2406.15477" target="_blank" rel="noopener">arXiv</a>
-            <a class="link-btn" href="https://github.com/KaiYin97/CrsisLLM" target="_blank" rel="noopener">Code</a>
-          </div>
-          <ul>
-            <li>Instruction fine-tuned Llama3.1-8B for <strong>multi-task tuning</strong> (text classification + NER) in multi-turn conversation format via LoRA and full-parameter settings.</li>
-            <li>Achieved <strong>96.7% of full-parameter tuning performance</strong> with optimal LoRA hyperparameters and <strong>87.2% overall accuracy</strong>.</li>
-            <li>Fine-tuned with <strong>DeepSpeed ZeRO-Stage-3</strong> in data-parallel mixed-precision, reducing GPU time by <strong>35%</strong>.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Disaster-Agent -->
-      <div class="paper-box">
-        <div class="paper-box-image">
-          <div class="badge badge-arxiv">Project 2024</div>
-          <div class="paper-img-placeholder">Disaster-Agent</div>
-        </div>
-        <div class="paper-box-text">
-          <h3>Disaster-Agent: LLM-based Multi-agent System for Complex Disaster Management Task Solving</h3>
-          <p class="venue">Sep. 2024 – Jan. 2025</p>
-          <div class="links">
-            <a class="link-btn" href="https://github.com/kaiYinTAMU/Disaster-Agent" target="_blank" rel="noopener">Code</a>
-          </div>
-          <ul>
-            <li>Proposed <strong>E_MCTS_TP</strong> (Efficient Monte Carlo Tree Search for Task Planning) to improve task planning ability of small language models in multi-agent systems at test time.</li>
-            <li>Developed <strong>DisasterTool</strong> via LLM-in-loop domain-specific agent discovery pipeline, reducing human workloads by <strong>98.9%</strong>.</li>
-            <li>Introduced <strong>DisasterTask benchmark</strong> with tasks of varying complexity (node, chain, DAG levels).</li>
-          </ul>
-        </div>
-      </div>
     </section>
 
     <!-- EDUCATION -->
