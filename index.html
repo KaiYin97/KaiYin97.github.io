@@ -69,8 +69,7 @@
         </li>
         <li>
           <a href="https://huggingface.co/DMIR01" target="_blank" rel="noopener">
-            <!-- HuggingFace icon via text fallback -->
-            <i class="fas fa-fw fa-robot"></i> Hugging Face
+            <i class="ai ai-hugging-face ai-fw"></i> Hugging Face
           </a>
         </li>
       </ul>
@@ -166,7 +165,7 @@
             <a href="https://huggingface.co/DMIR01/DMRetriever" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Model-ffd21e?style=flat" alt="Model"></a>
           </div>
           <ul>
-            <li>Developed DMRetriever, a family of six dense retrieval models (ranging from 33M to 7.6B parameters) initialized from <strong>encoder (BERT)- and decoder- (Qwen)-only backbones</strong>, achieving <strong>SOTA results across 48 retrieval tasks within all scales</strong> and <strong>exceptional parameter efficiency</strong>.</li>
+            <li>Developed DMRetriever, a family of six dense retrieval models (33M–7.6B) from <strong>encoder (BERT)- and decoder (Qwen)-only backbones</strong>, achieving <strong>SOTA across 48 retrieval tasks at all scales</strong> with <strong>exceptional parameter efficiency</strong>.</li>
             <li>Proposed <strong>difficulty-aware progressive instruction supervised fine-tuning</strong> to ensure models at different scales learn effectively.</li>
             <li>Introduced an <strong>advanced data refinement</strong> method, including domain-specific data synthesis, mutual-agreement-based false positive filtering, and <strong>difficulty-aware hard negative mining</strong>.</li>
             <li>Proposed <strong>multi-teacher knowledge distillation</strong> to further improve small-sized model performance and achieve parameter-efficiency for on-device model implementation.</li>
@@ -223,6 +222,23 @@
         </div>
       </div>
 
+      <!-- Disaster-Agent -->
+      <div class="paper-box">
+        <div class="paper-box-image">
+          <div class="badge badge-arxiv">Project 2024</div>
+          <img src="images/Disast-Agent.JPG" alt="Disaster-Agent" width="100%">
+        </div>
+        <div class="paper-box-text">
+          <h3>Disaster-Agent: LLM-based Multi-agent System for Complex Disaster Management Task Solving</h3>
+          <p class="venue">Sep. 2024 – Jan. 2025</p>
+          <ul>
+            <li>Proposed <strong>E_MCTS_TP</strong> (Efficient Monte Carlo Tree Search for Task Planning) at test time to improve <strong>task planning</strong> ability and efficiency of small language models (SLM) in multi-agent systems.</li>
+            <li>Developed <strong>DisasterTool</strong> through <strong>LLM-in-loop domain-specific agent discovery pipeline</strong>, reducing human workloads by <strong>98.9%</strong>.</li>
+            <li>Introduced <strong>DisasterTask benchmark</strong> including user tasks in different complexities through random sampling <strong>tool and data graph</strong> and self-instruct LLM in node, chain, and directed acyclic graph levels.</li>
+          </ul>
+        </div>
+      </div>
+
       <!-- CrisisSense-LLM -->
       <div class="paper-box">
         <div class="paper-box-image">
@@ -234,7 +250,7 @@
             CrisisSense-LLM: Instruction Fine-Tuning LLM for Multi-task Social Media Text Processing in Disaster Informatics
           </a></h3>
           <p class="authors"><strong>Kai Yin</strong>, Chengkai Liu, Ali Mostafavi, &amp; Xia Hu</p>
-          <p class="venue"><em>arXiv:2406.15477</em> &nbsp;|&nbsp; Under review, Information Processing and Management &nbsp;|&nbsp; Jan. 2024 – Jun. 2024</p>
+          <p class="venue"><em>arXiv:2406.15477</em> &nbsp;|&nbsp; Jan. 2024 – Jun. 2024</p>
           <div class="links">
             <a href="https://arxiv.org/abs/2406.15477" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/arXiv-b31b1b.svg?logo=arXiv" alt="arXiv"></a>
             <a href="https://github.com/KaiYin97/CrsisLLM" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Code-181717?logo=github&logoColor=white&style=flat" alt="Code"></a>
@@ -243,28 +259,6 @@
             <li>Designed fine-tuning prompt for <strong>multi-task tuning</strong> (text classification and named entity recognition) in multi-turn conversation format to <strong>instruction fine-tune</strong> Llama3.1-8B in <strong>LoRA</strong> and full-parameter tuning settings.</li>
             <li>Searched for hyperparameter combinations of LoRA to achieve <strong>96.7% performance</strong> of full-parameter tuning, achieving best overall accuracy of <strong>87.2%</strong>.</li>
             <li>Fine-tuned with <strong>data-parallel mixed-precision</strong> using <strong>DeepSpeed ZeRO-Stage-3</strong>, reducing GPU time by <strong>35%</strong>.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Disaster-Agent -->
-      <div class="paper-box">
-        <div class="paper-box-image">
-          <div class="badge badge-arxiv">Project 2024</div>
-          <img src="images/Disast-Agent.JPG" alt="Disaster-Agent" width="100%">
-        </div>
-        <div class="paper-box-text">
-          <h3><a href="https://github.com/kaiYinTAMU/Disaster-Agent" target="_blank" rel="noopener">
-            Disaster-Agent: LLM-based Multi-agent System for Complex Disaster Management Task Solving
-          </a></h3>
-          <p class="venue">Sep. 2024 – Jan. 2025</p>
-          <div class="links">
-            <a href="https://github.com/kaiYinTAMU/Disaster-Agent" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Code-181717?logo=github&logoColor=white&style=flat" alt="Code"></a>
-          </div>
-          <ul>
-            <li>Proposed <strong>E_MCTS_TP</strong> (Efficient Monte Carlo Tree Search for Task Planning) at test time to improve <strong>task planning</strong> ability and efficiency of small language models (SLM) in multi-agent systems.</li>
-            <li>Developed <strong>DisasterTool</strong> through <strong>LLM-in-loop domain-specific agent discovery pipeline</strong>, reducing human workloads by <strong>98.9%</strong>.</li>
-            <li>Introduced <strong>DisasterTask benchmark</strong> including user tasks in different complexities through random sampling <strong>tool and data graph</strong> and self-instruct LLM in node, chain, and directed acyclic graph levels.</li>
           </ul>
         </div>
       </div>
