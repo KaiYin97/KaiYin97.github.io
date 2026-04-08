@@ -4,14 +4,15 @@
 html { scroll-behavior: smooth; font-size: 15px; }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: #333;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #494e52;
   background: #fff;
-  line-height: 1.65;
+  line-height: 1.5;
 }
 
-a { color: #2a6db5; text-decoration: none; }
+a { color: #224b8d; text-decoration: none; }
 a:hover { text-decoration: underline; }
+a:focus { outline: thin dotted #f89406; outline: 5px auto #f89406; outline-offset: -2px; }
 
 ul { list-style: disc; padding-left: 1.4em; }
 ul li { margin-bottom: 0.3em; }
@@ -38,9 +39,10 @@ ul li { margin-bottom: 0.3em; }
 }
 
 .masthead__title {
-  font-weight: 700;
-  font-size: 1rem;
-  color: #222;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #494e52;
   margin-right: 2rem;
   white-space: nowrap;
 }
@@ -53,8 +55,8 @@ ul li { margin-bottom: 0.3em; }
 }
 
 .masthead__nav a {
-  color: #444;
-  font-size: 0.875rem;
+  color: #494e52;
+  font-size: 1em;
   padding: 0 0.85rem;
   height: 48px;
   display: flex;
@@ -66,8 +68,8 @@ ul li { margin-bottom: 0.3em; }
 
 .masthead__nav a:hover,
 .masthead__nav a.active {
-  color: #2a6db5;
-  border-bottom-color: #2a6db5;
+  color: #224b8d;
+  border-bottom-color: #224b8d;
   text-decoration: none;
 }
 
@@ -144,22 +146,23 @@ ul li { margin-bottom: 0.3em; }
 }
 
 .profile-name {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #222;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #494e52;
   margin-bottom: 0.2rem;
 }
 
 .profile-affil {
-  font-size: 0.85rem;
-  color: #666;
+  font-size: 1em;
+  color: #494e52;
   margin-bottom: 0.75rem;
 }
 
 .profile-bio {
-  font-size: 0.82rem;
-  color: #555;
-  line-height: 1.55;
+  font-size: 1em;
+  color: #494e52;
+  line-height: 1.5;
   text-align: left;
   margin-bottom: 1rem;
   padding: 0 0.25rem;
@@ -176,19 +179,19 @@ ul li { margin-bottom: 0.3em; }
 }
 
 .social-links a {
-  font-size: 0.85rem;
-  color: #444;
+  font-size: 1em;
+  color: #494e52;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.social-links a:hover { color: #2a6db5; text-decoration: none; }
+.social-links a:hover { color: #224b8d; text-decoration: none; }
 
 .social-links i {
   width: 18px;
   text-align: center;
-  color: #666;
+  color: #494e52;
   flex-shrink: 0;
 }
 
@@ -205,10 +208,12 @@ ul li { margin-bottom: 0.3em; }
 }
 
 .section h1 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 0.75rem;
+  font-size: 1.4em;
+  font-weight: bold;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #494e52;
+  margin: 1em 0 0.5em;
+  line-height: 1.2;
   padding-bottom: 0.4rem;
   border-bottom: 2px solid #eaeaea;
 }
@@ -235,7 +240,7 @@ ul li { margin-bottom: 0.3em; }
 .news-date {
   flex-shrink: 0;
   font-style: italic;
-  color: #888;
+  color: #777a7d;
   min-width: 70px;
 }
 
@@ -299,27 +304,28 @@ ul li { margin-bottom: 0.3em; }
 }
 
 .paper-box-text h3 {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #222;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #494e52;
   margin-bottom: 0.3rem;
-  line-height: 1.45;
+  line-height: 1.2;
 }
 
 .paper-box-text .authors {
-  font-size: 0.85rem;
-  color: #555;
+  font-size: 1em;
+  color: #494e52;
   margin-bottom: 0.4rem;
 }
 
 .paper-box-text .authors strong {
-  color: #222;
+  color: #494e52;
 }
 
 .paper-box-text .venue {
-  font-size: 0.85rem;
+  font-size: 1em;
   font-style: italic;
-  color: #444;
+  color: #494e52;
   margin-bottom: 0.5rem;
 }
 
@@ -332,24 +338,25 @@ ul li { margin-bottom: 0.3em; }
 
 .link-btn {
   display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 600;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   padding: 0.15rem 0.55rem;
-  border: 1px solid #2a6db5;
+  border: 1px solid #224b8d;
   border-radius: 3px;
-  color: #2a6db5;
+  color: #224b8d;
   transition: background 0.15s, color 0.15s;
 }
 
 .link-btn:hover {
-  background: #2a6db5;
+  background: #224b8d;
   color: #fff;
   text-decoration: none;
 }
 
 .paper-box-text ul {
-  font-size: 0.85rem;
-  color: #555;
+  font-size: 1em;
+  color: #494e52;
   padding-left: 1.2em;
 }
 
@@ -363,15 +370,15 @@ ul li { margin-bottom: 0.3em; }
 
 .pub-list li {
   margin-bottom: 1rem;
-  font-size: 0.9rem;
+  font-size: 1em;
   padding-left: 1rem;
   border-left: 3px solid #e0e0e0;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .pub-list li .pub-venue {
-  font-weight: 700;
-  color: #2a6db5;
+  font-weight: bold;
+  color: #224b8d;
 }
 
 /* ===== EDUCATION ===== */
@@ -382,7 +389,7 @@ ul li { margin-bottom: 0.3em; }
 
 .edu-list li {
   margin-bottom: 0.9rem;
-  font-size: 0.92rem;
+  font-size: 1em;
   display: flex;
   gap: 0.6rem;
   align-items: flex-start;
@@ -391,29 +398,29 @@ ul li { margin-bottom: 0.3em; }
 .edu-date {
   flex-shrink: 0;
   font-style: italic;
-  color: #888;
+  color: #777a7d;
   min-width: 140px;
 }
 
 /* ===== SKILLS ===== */
 .skills-box {
-  font-size: 0.92rem;
-  color: #444;
+  font-size: 1em;
+  color: #494e52;
   background: #f8f9fa;
   padding: 0.75rem 1rem;
   border-radius: 6px;
-  border-left: 3px solid #2a6db5;
+  border-left: 3px solid #224b8d;
 }
 
 /* ===== HONORS ===== */
-.honors-list { font-size: 0.92rem; }
+.honors-list { font-size: 1em; color: #494e52; }
 .honors-list li { margin-bottom: 0.4rem; }
 
 /* ===== FOOTER ===== */
 .site-footer {
   text-align: center;
-  font-size: 0.78rem;
-  color: #aaa;
+  font-size: 1em;
+  color: #777a7d;
   padding: 1.5rem;
   border-top: 1px solid #eee;
   margin-top: 2rem;
