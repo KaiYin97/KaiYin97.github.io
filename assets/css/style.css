@@ -487,27 +487,55 @@ ul li { margin-bottom: 0.3em; }
 }
 
 /* ===== EXPERIENCE ===== */
-.exp-list .edu-date { min-width: 175px; }
-@media (max-width: 768px) { .exp-list li { flex-direction: column; gap: 0.1rem; } }
+.exp-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-.exp-list .exp-desc {
-  display: inline-block;
+.exp-list > li {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.exp-date {
+  flex: 0 0 175px;
+  font-style: italic;
+  color: #777a7d;
+}
+
+.exp-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.exp-desc {
+  display: block;
   margin-top: 0.2rem;
   color: #494e52;
   font-size: 0.95rem;
 }
 
-.exp-list .exp-bullets {
-  margin: 0.35rem 0 0 1.1rem;
+ul.exp-bullets {
+  display: block;
+  list-style: disc;
+  margin: 0.35rem 0 0 1.2rem;
   padding: 0;
   font-size: 0.92rem;
   color: #494e52;
   line-height: 1.55;
 }
 
-.exp-list .exp-bullets li {
+ul.exp-bullets > li {
   display: list-item;
   margin-bottom: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .exp-list > li { flex-direction: column; gap: 0.1rem; }
+  .exp-date { flex-basis: auto; }
 }
 
 /* ===== SUB-PAPERS (one project, several papers) ===== */
