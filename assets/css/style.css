@@ -487,39 +487,76 @@ ul li { margin-bottom: 0.3em; }
 }
 
 /* ===== EXPERIENCE ===== */
-.exp-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+.exp-list { margin: 0; }
 
-.exp-list > li {
+.exp-item {
   display: flex;
-  gap: 0.8rem;
+  gap: 1.1rem;
   align-items: flex-start;
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
 }
 
-.exp-date {
-  flex: 0 0 175px;
-  font-style: italic;
-  color: #777a7d;
+.exp-logo {
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  border: 1px solid #e3e6ea;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  line-height: 1;
 }
 
-.exp-body {
+.exp-main {
   flex: 1;
   min-width: 0;
 }
 
-.exp-desc {
-  display: block;
-  margin-top: 0.2rem;
-  color: #494e52;
+.exp-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.4rem 1rem;
+  flex-wrap: wrap;
+}
+
+.exp-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.7rem;
+}
+
+.exp-role {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.05em;
+  color: #222;
+}
+
+.exp-org {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
+  color: #127c74;
+}
+
+.exp-time {
+  color: #6b6f73;
+  font-size: 0.92rem;
+  white-space: nowrap;
+}
+
+.exp-project {
+  margin: 0.45rem 0 0.2rem;
   font-size: 0.95rem;
+  color: #494e52;
 }
 
 ul.exp-bullets {
-  display: block;
   list-style: disc;
   margin: 0.35rem 0 0 1.2rem;
   padding: 0;
@@ -528,14 +565,12 @@ ul.exp-bullets {
   line-height: 1.55;
 }
 
-ul.exp-bullets > li {
-  display: list-item;
-  margin-bottom: 0.25rem;
-}
+ul.exp-bullets > li { margin-bottom: 0.25rem; }
 
 @media (max-width: 768px) {
-  .exp-list > li { flex-direction: column; gap: 0.1rem; }
-  .exp-date { flex-basis: auto; }
+  .exp-item { gap: 0.8rem; }
+  .exp-logo { flex-basis: 48px; width: 48px; height: 48px; font-size: 26px; border-radius: 10px; }
+  .exp-time { white-space: normal; }
 }
 
 /* ===== SUB-PAPERS (one project, several papers) ===== */
@@ -556,4 +591,35 @@ ul.exp-bullets > li {
   font-size: 0.98rem;
   margin: 0 0 0.25rem;
   line-height: 1.4;
+}
+
+/* ===== COMPANY LOGOS ===== */
+.co-aws, .co-aws-text { color: #232f3e; }
+.co-linkedin, .co-linkedin-text { color: #0a66c2; }
+
+.news-logo {
+  font-size: 1.05em;
+  vertical-align: -0.1em;
+}
+
+/* ===== VISITOR MAP ===== */
+.visitor-map {
+  margin-top: 1.2rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.visitor-map-title {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #777a7d;
+  margin-bottom: 0.4rem;
+}
+
+.visitor-map img,
+.visitor-map canvas,
+.visitor-map iframe {
+  max-width: 100% !important;
+  height: auto !important;
 }
