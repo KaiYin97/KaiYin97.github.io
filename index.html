@@ -11,7 +11,7 @@
   <!-- Academicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link rel="stylesheet" href="assets/css/style.css?v=20261113b">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261114c">
 </head>
 <body>
 
@@ -79,6 +79,12 @@
           </a>
         </li>
       </ul>
+
+      <!-- Visitor map (MapMyVisitors) -->
+      <div class="visitor-map">
+        <div class="visitor-map-title">Visitors</div>
+        <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=VM-ObrI2IT6Nl9pCkV5ck90wUKerYxXxOS3diOq_wj0&cl=ffffff&w=a"></script>
+      </div>
     </div>
   </aside>
 
@@ -108,7 +114,7 @@
       <ul class="news-list">
         <li>
           <span class="news-date">2026.09</span>
-          <span>💼 Joined <strong>AWS AI Lab</strong> (New York City) as an <strong>Applied Scientist Intern</strong>, working on agentic RL for enterprise deep search.</span>
+          <span>💼 Joined <i class="fab fa-aws news-logo co-aws-text"></i> <strong>AWS AI Lab</strong> (New York City) as an <strong>Applied Scientist Intern</strong>, working on agentic RL for enterprise deep search.</span>
         </li>
         <li>
           <span class="news-date">2026.09</span>
@@ -129,7 +135,7 @@
         </li>
         <li>
           <span class="news-date">2026.05</span>
-          <span>💼 Joined <strong>LinkedIn</strong> (Mountain View) as a <strong>PhD AI/ML Engineer Intern</strong>, working on post-training small language models for job search.</span>
+          <span>💼 Joined <i class="fab fa-linkedin news-logo co-linkedin-text"></i> <strong>LinkedIn</strong> (Mountain View) as a <strong>PhD AI/ML Engineer Intern</strong>, working on post-training small language models for job search.</span>
         </li>
         <li>
           <span class="news-date">2026.04</span>
@@ -173,21 +179,34 @@
     <!-- EXPERIENCE -->
     <section class="section" id="experience">
       <h1>💼 Internship Experience</h1>
-      <ul class="exp-list">
-        <li>
-          <span class="exp-date">2026.09 – 2026.12 (exp.)</span>
-          <div class="exp-body">
-            <strong>AWS AI Lab</strong>, New York City, NY, USA<br>
-            Applied Scientist Intern
-            <div class="exp-desc">Agentic RL for enterprise deep search (work in progress).</div>
+      <div class="exp-list">
+        <div class="exp-item">
+          <div class="exp-logo co-aws" title="AWS"><i class="fab fa-aws"></i></div>
+          <div class="exp-main">
+            <div class="exp-head">
+              <div class="exp-title">
+                <span class="exp-role">Applied Scientist Intern</span>
+                <span class="exp-org">AWS AI Lab, New York City</span>
+              </div>
+              <div class="exp-time">Sep 2026 – Dec 2026 (expected)</div>
+            </div>
+            <ul class="exp-bullets">
+              <li>Agentic RL for enterprise deep search (work in progress).</li>
+            </ul>
           </div>
-        </li>
-        <li>
-          <span class="exp-date">2026.05 – 2026.08</span>
-          <div class="exp-body">
-            <strong>LinkedIn</strong>, Mountain View, CA, USA<br>
-            PhD AI/ML Engineer Intern
-            <div class="exp-desc"><strong>FacetLLM-1.5B</strong>: post-training a small language model for dynamic facet suggestion in job search.</div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-logo co-linkedin" title="LinkedIn"><i class="fab fa-linkedin"></i></div>
+          <div class="exp-main">
+            <div class="exp-head">
+              <div class="exp-title">
+                <span class="exp-role">PhD AI/ML Engineer Intern</span>
+                <span class="exp-org">LinkedIn, Mountain View</span>
+              </div>
+              <div class="exp-time">May 2026 – Aug 2026</div>
+            </div>
+            <p class="exp-project"><strong>FacetLLM-1.5B</strong>: post-training a small language model for dynamic facet suggestion in job search.</p>
             <ul class="exp-bullets">
               <li><strong>Reasoning-enhanced training data generation</strong> that follows strict product policy and works without PM-annotated data.</li>
               <li><strong>Multi-task hybrid supervised fine-tuning</strong> with a task-weighted loss, so the model internalizes the reasoning chain and keeps performance close to full reasoning at inference.</li>
@@ -195,8 +214,8 @@
               <li>Human annotation-driven <strong>LLM-as-Judge</strong> prompt development that distills expert knowledge into judge prompts for offline evaluation, avoiding expensive human annotation.</li>
             </ul>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
 
     <!-- PUBLICATIONS & PROJECTS -->
